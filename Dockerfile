@@ -14,7 +14,7 @@ RUN yum install -y python{,-devel} gcc libxml2{,-devel} libxslt{,-devel} git && 
 ENV PIP_NO_CACHE_DIR "off"
 
 ENV REPO https://github.com/fabric-bolt/fabric-bolt.git
-ENV VERSION 03613fa90db193f603cc09cb778fe0fcce9a7db7
+ENV VERSION af638fdce54a9ef63010b3fbdfd472d2e394bd67
 
 RUN mkdir -p /src && \
     git clone ${REPO} /src/fabric-bolt && \
